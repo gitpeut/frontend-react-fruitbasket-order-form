@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <button type="button">
-
-      </button>
+      <h1>Fruitmand bezorgservice</h1>
     </>
   );
 }
