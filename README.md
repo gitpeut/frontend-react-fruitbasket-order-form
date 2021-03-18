@@ -72,7 +72,8 @@ Vergeet niet de [documentatie](https://react-hook-form.com/) van React Hook Form
 
 ## Bonus opdrachten
 * Maak componenten van elementen die je heel veel hebt hergebruikt, zoals bijvoorbeeld:
-  * De button
+  * De reset- en verzenden button
+  * De - counter + combinatie
   * De label- en text-input combinatie
   * Ga zo maar door!
 * Maak er een mooie gestylde pagina van!
