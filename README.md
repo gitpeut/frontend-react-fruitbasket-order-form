@@ -77,4 +77,4 @@ Vergeet niet de [documentatie](https://react-hook-form.com/) van React Hook Form
   * Ga zo maar door!
 * Maak er een mooie gestylde pagina van!
 * En als je dan toch bezig bent, voorzie dan de buttons van conditionele styling. Wanneer een fruitsoort 1 of meer keer aangeklikt is, kun je 'm bijvoorbeeld een gekleurde rand geven!
-* Zorg ervoor dat het postcode-veld valideert op een patroon - en dus checkt of de input wel het format van Letter Letter Letter Letter Cijfer Cijfer aanhoud. _Tip_: hier kun je RegEx voor gebruiken!    
+* Zorg ervoor dat het postcode-veld valideert op een patroon - en dus checkt of de input wel het format van Cijfer Cijfer Cijfer Cijfer Letter Letter aanhoud. _Tip_: hier kun je RegEx voor gebruiken!    
