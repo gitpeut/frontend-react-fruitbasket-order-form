@@ -1,7 +1,13 @@
 # Opdrachtbeschrijving
 
+## Uitwerkingen
+In deze repo vind je de volgende uitwerkingen:
+1. Uitwerkingen van [opdracht 1 & 2](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-1-2), zonder custom compontenten.
+2. Uitwerkingen van [opdracht 3](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-3), bovenstaande uitwerkingen maar dan opgezet in herbruikbare componenten.
+3. Uitwerkingen van de [bonusopdracht](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-3-bonus) waarbij het formulier één `onChange`-functie heeft alle input-velden, mét componenten.
+
 ## Inleiding
-Je vrienden Freek en Bernard zijn allebei doorgewinterde horeca-toppers, maar vanwege de wereldwijde pandemie zijn zij helaas hun baan kwijtgeraakt. Gelukkig zijn Freek en Bernard niet voor één gat te vangen, dus zijn ze samen een bedrijfje begonnen: 
+Je vrienden Freek en Bernard zijn allebei doorgewinterde horeca-toppers, maar vanwege de wereldwijde pandemie zijn zij helaas hun baan kwijtgeraakt. Gelukkig zijn Freek en Bernard niet voor één gat te vangen, dus zijn ze samen een bedrijfje begonnen:
 
 ![company-logo](./src/assets/screenshot-logo.png)
 
@@ -28,54 +34,43 @@ Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de 
 ### Randvoorwaarden fruit-counters
 * Je maakt gebruik van de useState hook van React om de hoeveelheden bij te houden
 * Klanten hebben de vrijheid om te kiezen tussen vier typen fruit:
-    1. Bananen 🍌
-    2. Aarbeien 🍓
-    3. Appels 🍏
-    4. Kiwi's 🥝
-* Elk type fruit heeft twee buttons: één die de hoeveelheid verhoogd (`+`) en één die de hoeveelheid verlaagd (`-`).
+  1. Bananen 🍌
+  2. Aarbeien 🍓
+  3. Appels 🍏
+  4. Kiwi's 🥝
+* Elk type fruit heeft twee buttons: één die de hoeveelheid verhoogd (`+`) en één die de hoeveelheid verlaagd (`-`)
+* De hoeveelheid mag door de gebruiker niet lager gezet worden dan 0
 * De hoeveelheid geselecteerde fruittypes wordt bij iedere update getoond aan de gebruiker
 * Er is ook een reset button, die alle counters weer op 0 zet.
 
-## Opdracht 2 - React Hook Form
-Het is natuurlijk lastig om een fruitmand te bestellen als we niet weten waar die mand naartoe moet. Daarom gaan we een bestelformulier maken met React Hook Form:
+## Opdracht 2 - Formulier bouwen
+Het is natuurlijk lastig om een fruitmand te bestellen als we niet weten waar die mand naartoe moet. Daarom gaan we een bestelformulier maken:
 
 ![formulier-no-styling](./src/assets/screenshot-form.png)
 
-Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de functionaliteit. Heb je tijd over? Kijk dan vooral bij de bonusopdrachten! 
-Vergeet niet de [documentatie](https://react-hook-form.com/) van React Hook Form bij de hand te houden, hier staan enorm veel code voorbeelden die je kunnen helpen.
+Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de functionaliteit. Heb je tijd over? Kijk dan vooral bij de bonusopdrachten!
 
 ### Randvoorwaarden formulier
-* Het formulier is gebouwd in React Hook Form
 * Het formulier bevat de volgende velden:
-    * Voornaam:
-        * Verplicht
-    * Achternaam:
-        * Verplicht
-    * Leeftijd:
-        * Verplicht
-        * Minimaal 18 jaar
-    * Postcode:
-        * Verplicht
-    * Huisnummer zonder toevoeging:
-        * Verplicht
-    * Radiobuttons bezorgfrequentie:
-        * Opties: iedere week, om de week, iedere maand, anders
-        * Verplicht
-    * Andere bezorgfrequentie
-        * Verplicht bij optie anders
-        * Wordt alleen getoond als optie anders is geselecteerd
-    * Opmerking (textarea)
-    * Akkoord met de voorwaarden (checkbox)
-    * Verzendbutton
-* Alle velden worden gevalideerd tijdens typen (default gedrag)
-* Wanneer de gebruiker op verzenden drukt, worden de formulier-waardes in de console gelogd!
+  * Voornaam
+  * Achternaam
+  * Leeftijd
+  * Postcode
+  * Selectbox met bezorgfrequentie. _Opties_: iedere week, om de week, iedere maand
+  * Radiobuttons met tijdvak. _Opties_: overdag, 's avonds
+  * Opmerking (textarea)
+  * Akkoord met de voorwaarden (checkbox)
+  * Verzendbutton
+* Pas wanneer de gebruiker op verzenden drukt, worden de formulier-waardes én de fruit-waardes in de console gelogd!
+
+## Opdracht 3 - Componenten maken
+Maak eigen componenten van elementen die je heel veel hebt hergebruikt. Om dit voor elkaar te krijgen zul je de state moeten bijhouden in `App.js` en zowel waardes als functies door moeten geven als properties _(callback props)_. Denk hierbij aan:
+* De reset- en verzenden button (die lijken erg op elkaar, toch?)
+* De - counter + combinatie
+* De label- en text-input combinatie
+* Ga zo maar door!
 
 ## Bonus opdrachten
-* Maak componenten van elementen die je heel veel hebt hergebruikt, zoals bijvoorbeeld:
-  * De reset- en verzenden button
-  * De - counter + combinatie
-  * De label- en text-input combinatie
-  * Ga zo maar door!
 * Maak er een mooie gestylde pagina van!
+* Gebruik één samengestelde `onChange` handler-functie voor alle fruitsoorten samen
 * En als je dan toch bezig bent, voorzie dan de buttons van conditionele styling. Wanneer een fruitsoort 1 of meer keer aangeklikt is, kun je 'm bijvoorbeeld een gekleurde rand geven!
-* Zorg ervoor dat het postcode-veld valideert op een patroon - en dus checkt of de input wel het format van Cijfer Cijfer Cijfer Cijfer Letter Letter aanhoud. _Tip_: hier kun je RegEx voor gebruiken!    
