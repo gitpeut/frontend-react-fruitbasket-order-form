@@ -1,11 +1,5 @@
 # Opdrachtbeschrijving
 
-## Uitwerkingen
-In deze repo vind je de volgende uitwerkingen:
-1. Uitwerkingen van [opdracht 1 & 2](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-1-2), zonder custom compontenten.
-2. Uitwerkingen van [opdracht 3](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-3), bovenstaande uitwerkingen maar dan opgezet in herbruikbare componenten.
-3. Uitwerkingen van de [bonusopdracht](https://github.com/hogeschoolnovi/frontend-react-fruitbasket-order-form-uitwerkingen/tree/uitwerkingen-opdracht-3-bonus) waarbij het formulier één `onChange`-functie heeft alle input-velden, mét componenten.
-
 ## Inleiding
 Je vrienden Freek en Bernard zijn allebei doorgewinterde horeca-toppers, maar vanwege de wereldwijde pandemie zijn zij helaas hun baan kwijtgeraakt. Gelukkig zijn Freek en Bernard niet voor één gat te vangen, dus zijn ze samen een bedrijfje begonnen:
 
