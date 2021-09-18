@@ -1,0 +1,19 @@
+form {
+    width: 80vw;
+    margin: 1vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+fieldset {
+    width: 75vw;
+}
+
+legend {
+    font-weight: bold;
+}
+
